@@ -1,0 +1,28 @@
+{
+  "static": {
+    "urls": {
+      "/polyfills.43a6a16e791d2caa0484.bundle.js": "669df48deb7f2148518a6e8e9490ba8ee2db7000",
+      "/main.8ef06a4e3cee9f1980d0.bundle.js": "1bcefc159f5d680a38d1fb17e78d583ffb61ab7e",
+      "/sw-register.6819cd2c5fa25470ecf2.bundle.js": "50d549edfbd188ed199d8d0b079afa593202e3ea",
+      "/inline.97ebadd22e32dbc3d98f.bundle.js": "2ca2d9f78a1d12ac58344ab3e1f351b75e703692",
+      "/styles.d41d8cd98f00b204e980.bundle.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "/assets/favicons/android-chrome-256x256.png": "b71ab5132eea180f0179326fa5e904f8c008362c",
+      "/assets/favicons/android-chrome-192x192.png": "7631034d1d7ef2dc27c547c5b952ad0d7570a3ec",
+      "/assets/about.PNG": "ac07bc737be2a6b086c531e9938799d6969169fd",
+      "/assets/favicons/apple-touch-icon.png": "30bc8ff49a6f26d3554f6be5eccab72015141c05",
+      "/assets/favicons/android-chrome-512x512.png": "acc4b29314ae8c246038ad600787a174e938e229",
+      "/assets/favicons/manifest.json": "0870df11d9e857a817eae8ef3529a7874fc78681",
+      "/assets/favicons/mstile-150x150.png": "ecafc859265cb7fd27ac122e712b1f707936192e",
+      "/assets/favicons/browserconfig.xml": "926206abe431c6e8f62eec8b663800f913a5e272",
+      "/assets/logo.PNG": "553913685dd028e03de60350cb8569e673af7307",
+      "/assets/favicons/safari-pinned-tab.svg": "84bb1954615a7bbb1202b2e753523b623e86de11",
+      "/assets/favicons/favicon.ico": "68dd6019aedf507b29f48e7780c5870eacbc167c",
+      "/assets/Preloader_4.gif": "f1a37ffd89496245ebb556a204c3828539786cbd",
+      "/assets/favicons/favicon-16x16.png": "16208fda033a4160b7acb8f22919a9ea4196aa54",
+      "/assets/favicons/favicon-32x32.png": "1a3f2666f29dec8112f9ae027ee9877dcdd48c31",
+      "/assets/homeBanner.jpg": "f001aa00e57fa2a6c41f5d3bef3cc6923ffa6ab9",
+      "/index.html": "dda36c937fa73ea16cafeaaa785eb89dc8004a66"
+    },
+    "_generatedFromWebpack": true
+  }
+}
