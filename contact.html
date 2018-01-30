@@ -16,6 +16,12 @@ Licence URI: http://www.os-templates.com/template-terms
     h1,h2,h3,h4,h5,h6,p,a,li {
        font-family:"Open Sans","Helvetica Neue";
     }
+    .myInput {
+      width:100%;
+      padding:10px;
+      border:0;
+      border-radius: 4px;
+    }
     .submitButton {
       background-color: #4CAF50; /* Green */
       border: none;
@@ -31,7 +37,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <body id="top">
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="bgded overlay" style="background-image:url('images/background/about-us.jpg');"> 
+<div class="bgded overlay" style="background-image:url('images/background/contact_us.jpg');"> 
     <!-- ################################################################################################ -->
     <div class="wrapper row1">
       <header id="header" class="hoc clear"> 
@@ -42,7 +48,7 @@ Licence URI: http://www.os-templates.com/template-terms
         <nav id="mainav" class="fl_right">
           <ul class="clear">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="about.html">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a class="drop" href="services.html"> Our Services</a>
               <ul>
                 <li><a href="services.html#color">Color Design</a></li>
@@ -62,7 +68,7 @@ Licence URI: http://www.os-templates.com/template-terms
                 <li><a href="#">Level 2</a></li>
               </ul>
             </li> -->
-            <li><a href="contact.html"> Contact Us </a></li>
+            <li class="active"><a href="contact.html"> Contact Us </a></li>
           </ul>
         </nav>
         <!-- ################################################################################################ -->
@@ -77,7 +83,7 @@ Licence URI: http://www.os-templates.com/template-terms
                 <!-- <p>Ullamcorper</p> -->
                 <!-- <h3 class="heading">Vision</h3> -->
                 <!-- <p>To provide a platform to home builders and furniture outlets, which work as a virtual assistant to help their clients to envision and customize innovative home designing ideas. This invaluable tool will give homeowners a confidence, gratification and visibility on how the preferred design will emerge on their house.</p> -->
-                <footer><a class="btn" href="contact.html">Get in Touch</a></footer>
+                <!-- <footer><a class="btn" href="contact.html">Get in Touch</a></footer> -->
               </article>
             </li>
           </ul>
@@ -90,26 +96,27 @@ Licence URI: http://www.os-templates.com/template-terms
     <div class="wrapper row3" id="about">
         <main class="hoc container clear"> 
             <!-- main body -->
-            <!-- ################################################################################################ -->
-            <div class="btmspace-80">
-                <p class="nospace" style="font-size:20px">Our Vision</p>
-                <p style="color:black;font-size: 18px;">To help home décor service providers and furniture shops to envision and customize innovative home designing ideas for their clients.</p><br/>
-                <p class="nospace" style="font-size:20px">Our Mission</p>
-                <p style="color:black;font-size: 18px;">To provide an innovative yet invaluable tool for furniture industries and home décor groups to give confidence, gratification and visibility regarding the preferred design to emerge any dream home for their clients. </p><br/>
-                <p class="nospace" style="font-size:20px">Our Specialities</p>
-                <p style="color:black;font-size: 18px;">Homeowners/homebuyers deal with the biggest challenge at the time of selecting their specific home design i.e. they have to imagine the way, in which any selected design consisting of roof tiles, bricks, sofa, stone bench top or coffee table may appear at the home. At the same time, many of you face difficulty in the selection of matching colors to enhance and retain the beauty of your interior space. <br/><br/>                        
-                    On the other side, home décor service providers often face difficulty in representing the best home décor solutions to clients (homeowners/homebuyers) even though they have countless innovative ideas in their minds. Positively, home décor companies and furniture groups may install our Quasi Designs furniture design and color scheme apps to take homeowners in the world of virtual reality. The main role of our innovative design tool is to give an idea about décor of the bedrooms, living room and kitchen of any future home. 
-                </p>
-            </div>
-            <div>
-                <h3 class="center" style="color:black;font-family:georgia;font-size: 30px;">Why to Choose Us?</h3>
-                <p class="nospace" style="font-size:20px">Bespoke Design Solutions</p>
-                <p style="color:black;font-size: 18px;">Our Quasi Designs Group has a team of creative, skilled, experienced and fully dedicated professionals to provide you with a bespoke design solution.</p><br/>
-                <p class="nospace" style="font-size:20px">Deals with Clients on an Individual Basis</p>
-                <p style="color:black;font-size: 18px;">We deal with each requirement of our client on an individual basis irrespective of its size or location. Simultaneously, we deliver cost-effective interior design, furniture items and color scheme solutions without making any compromise on our offered solutions. </p><br/>                
-                <p class="nospace" style="font-size:20px">Gives Good Worth to Investment Time and Money</p>
-                <p style="color:black;font-size: 18px;">With the readily available real samples of your home promptly, homeowners get proper idea about their dream homes. In this way, they do not have to waste their valuable time or money in home decor and thereby, get good worth to the made investments</p><br/>                
-            </div>
+            <section class="hoc container clear">
+                <!-- ################################################################################################ -->
+                <div class="two_quarter first">
+                  <div style="padding:30px;">
+                    <h1 style="font-size:30px;">We'd Love to Hear from You!</h2>
+                    <p style="font-size:18px;">Quasi Design believes communication between customer and company is the key success factor for any business relationship. <br> If you want to make any inquiry or you want any clarification regarding our services, products and any other issue related to Quasi Design. Please get in touch with us.</p>
+                  </div> 
+                </div>
+                <div class="two_quarter" style="background-color:#eeeeee;padding:25px;border-radius: 10px;">
+                  <input class="myInput" type="text" name="name" placeholder="Your Name *"><br/> 
+                  <input class="myInput" type="text" name="email" placeholder="Your Email *"><br/> 
+                  <input class="myInput" type="text" name="number" placeholder="Mobile Number *"><br/> 
+                  <textarea rows="5"  class="myInput" name="Query" placeholder="Enter your query here"></textarea><br />
+                  <button type="submit" class="submitButton" style="float:right">submit</button>
+                </div>
+                <div style="width: 100%">
+                    <iframe width="100%" height="327" src="https://maps.google.com/maps?width=100%&amp;height=250&amp;hl=en&amp;q=Sydney%2C%20Australia+(Quasi%20Design)&amp;ie=UTF8&amp;t=&amp;z=11&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/">Embed Google Map</a></iframe>
+                  </div>
+                <!-- ################################################################################################ -->
+              </section>
+            
             <div class="clear"></div>
         </main>
     </div>              
