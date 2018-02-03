@@ -34,7 +34,7 @@ File: Layout CSS
 --------------------------------------------------------------------------------------------------------------- */
 #pageintro{padding:150px 0;}
 
-#pageintro li article{display:block; max-width:75%; margin:0 auto; text-align:center;}
+#pageintro li article{display:block; max-width:100%; margin:0 auto; text-align:center;}
 #pageintro li article *{margin:0;}
 
 #pageintro li p:first-of-type{margin-bottom:10px; font-style:italic;}
