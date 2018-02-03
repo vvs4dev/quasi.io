@@ -12,6 +12,7 @@ Licence URI: http://www.os-templates.com/template-terms
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <style>
     h1,h2,h3,h4,h5,h6,p,a,li {
        font-family:"Open Sans","Helvetica Neue";
@@ -34,7 +35,7 @@ Licence URI: http://www.os-templates.com/template-terms
     }
   </style>
 </head>
-<body id="top">
+<body id="top" ng-app="QuasiApp" ng-controller="emailCtrl">
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="bgded overlay" style="background-image:url('images/background/contact_us.jpg');"> 
@@ -43,7 +44,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <header id="header" class="hoc clear"> 
         <!-- ################################################################################################ -->
         <div id="logo" class="fl_left">
-          <h1><a href="index.html">Quasi Designs</a></h1>
+          <h1><a href="index.html" style="font-family: Calibri">Quasi Designs</a></h1>
         </div>
         <nav id="mainav" class="fl_right">
           <ul class="clear">
@@ -105,11 +106,14 @@ Licence URI: http://www.os-templates.com/template-terms
                   </div> 
                 </div>
                 <div class="two_quarter" style="background-color:#eeeeee;padding:25px;border-radius: 10px;">
-                  <input class="myInput" type="text" name="name" placeholder="Your Name *"><br/> 
-                  <input class="myInput" type="text" name="email" placeholder="Your Email *"><br/> 
-                  <input class="myInput" type="text" name="number" placeholder="Mobile Number *"><br/> 
-                  <textarea rows="5"  class="myInput" name="Query" placeholder="Enter your query here"></textarea><br />
-                  <button type="submit" class="submitButton" style="float:right">submit</button>
+                  <form ng-submit="sendPost()">
+                      <input class="myInput" type="text" name="name" placeholder="Your Name *" ng-model="dataToPost.name"><br/> 
+                      <input class="myInput" type="text" name="email" placeholder="Your Email *" ng-model="dataToPost._replyto"><br/> 
+                      <input class="myInput" type="text" name="number" placeholder="Mobile Number *" ng-model="dataToPost.number"><br/> 
+                      <textarea rows="5"  class="myInput" name="Query" placeholder="Enter your query here" ng-model="dataToPost.message"></textarea><br />
+                      <button type="submit" class="submitButton" style="float:right">submit</button>    
+                  </form>
+                  {{ dataToPost}}
                 </div>
                 <div style="width: 100%">
                     <iframe width="100%" height="327" src="https://maps.google.com/maps?width=100%&amp;height=250&amp;hl=en&amp;q=Sydney%2C%20Australia+(Quasi%20Design)&amp;ie=UTF8&amp;t=&amp;z=11&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/">Embed Google Map</a></iframe>
@@ -167,7 +171,16 @@ Licence URI: http://www.os-templates.com/template-terms
           <!-- ################################################################################################ -->
         </div>
       </div>
-      
+      <script>
+          var app = angular.module('QuasiApp', []);
+          app.controller('emailCtrl', function($scope, $http) {
+            console.log('email Ctrl Called');
+            $scope.dataToPost = {};
+            $scope.sendPost = function () {
+
+            }
+          });
+      </script>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
