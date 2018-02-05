@@ -24,6 +24,8 @@ $('.basicslider').flexslider({
 	controlNav: true,
 	directionNav: false,
 	smoothHeight: true,
+	slideshowSpeed: 2000,
+	animationSpeed: 500,
 	start: function(slider) {
 		$('body').removeClass('loading');
 	}
