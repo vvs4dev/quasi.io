@@ -19,7 +19,7 @@ File: Flexslider Configuration Settings
 // Homepage Slider
 $('.basicslider').flexslider({
 	animation: "slide",
-	// animationLoop: true,
+	animationLoop: true,
 	pauseOnHover: true,
 	controlNav: true,
 	directionNav: false,
